@@ -35,7 +35,7 @@ label{
     cursor: pointer;
 }
 
-#btn-confirmar{
+#btn-confirm{
     margin: 20px 0 0 0;
     padding: 10px 20px;
     outline: none;
@@ -44,7 +44,7 @@ label{
     cursor: pointer;
     transition: .3s;
 }
-#btn-confirmar:hover{
+#btn-confirm:hover{
     transform: scale(1.05);
 }
 

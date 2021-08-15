@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
-    <title> Verificador de idade</title>
+    <title> Age Checker Project</title>
 </head>
 <body>
     <form class="container">
-        <h1> Verificador de Idade </h1>
+        <h1> Age Checker </h1>
         <div class="container">
             <div>
-                <label for="ipt-anoNasc">Ano de nascimento:</label>
-                <input type="text" id="ipt-anoNasc" maxlength="4">
+                <label for="ipt-birthYear"> Birth Year:</label>
+                <input type="text" id="ipt-birthYear" maxlength="4">
             </div>
             <div>
-                <label for="">Sexo:</label>
-                <input type="radio" name="radio" value="Masculino" id="rad-masculino">
-                <label for="rad-masculino">Masculino</label>
-                <input type="radio" name="radio" value="Feminino" id="rad-feminino">
-                <label for="rad-feminino">Feminino</label>
+                <label for=""> Gender:</label>
+                <input type="radio" name="radio" value="Male" id="rad-male">
+                <label for="rad-male"> Male </label>
+                <input type="radio" name="radio" value="Female" id="rad-female">
+                <label for="rad-female"> Female </label>
             </div>
             <div>
-                <button id="btn-confirmar" type="button" onclick="getValues()"> Confirmar </button>
+                <button id="btn-confirm" type="button" onclick="getValues()"> Confirm </button>
             </div>
         </div>
     </form>

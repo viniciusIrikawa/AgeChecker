@@ -1,16 +1,16 @@
 const getValues = () => {
-    const yearOfBirth = document.getElementById('ipt-anoNasc');
+    const yearOfBirth = document.getElementById('ipt-birthYear');
     const inputRadio = document.querySelector('input[name="radio"]:checked');
     const actualYear = new Date();
     const actualYear2 = actualYear.getFullYear();
     
     if(yearOfBirth.value.length != 4 || yearOfBirth.value.length == 0){
-        alert('Você precisa informar um ano de nascimento de quatro dígitos!')
+        alert('You need to report a four-digit birth year!')
     }else if(inputRadio == null){
-        alert('Campos não preenchidos!');
+        alert('Fields not filled in!');
     }
     else if(yearOfBirth.value > actualYear2){
-        alert('Valor inválido! O valor informado é maior que o ano atual.');
+        alert('Invalid value! The reported value is greater than the current year.');
     }
     else{
         const age = actualYear2 - Number(yearOfBirth.value);
@@ -18,7 +18,7 @@ const getValues = () => {
         const text = document.createElement('p');
         const container = document.querySelector('div.container');
         result.setAttribute('id', 'result');
-        text.innerHTML = `Você possui ou fará ${age} anos este ano e é do sexo ${inputRadio.value}.`;
+        text.innerHTML = `You are or will be ${age} this year and are ${inputRadio.value}`;
         result.appendChild(text);
         container.appendChild(result);
     }
