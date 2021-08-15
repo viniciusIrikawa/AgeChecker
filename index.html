@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title> Verificador de idade</title>
+</head>
+<body>
+    <form class="container">
+        <h1> Verificador de Idade </h1>
+        <div class="container">
+            <div>
+                <label for="ipt-anoNasc">Ano de nascimento:</label>
+                <input type="text" id="ipt-anoNasc" maxlength="4">
+            </div>
+            <div>
+                <label for="">Sexo:</label>
+                <input type="radio" name="radio" value="Masculino" id="rad-masculino">
+                <label for="rad-masculino">Masculino</label>
+                <input type="radio" name="radio" value="Feminino" id="rad-feminino">
+                <label for="rad-feminino">Feminino</label>
+            </div>
+            <div>
+                <button id="btn-confirmar" type="button" onclick="getValues()"> Confirmar </button>
+            </div>
+        </div>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
